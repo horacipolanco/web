@@ -10,7 +10,7 @@ function changeWords() {
       i = i < words.length - 1 ? i+1 : 0;
       $(words).removeClass("activeone");
       $(words).eq(i).addClass("activeone");
-  }, 2000);
+  }, 1500);
 }
   
   function changeWordsSecond() {
@@ -20,7 +20,7 @@ function changeWords() {
       i = i < wordssecond.length - 1 ? i+1 : 0;
       $(wordssecond).removeClass("activesecond");
       $(wordssecond).eq(i).addClass("activesecond");
-  }, 4000);
+  }, 2000);
 }
 
 });
