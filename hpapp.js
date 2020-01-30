@@ -8,8 +8,8 @@ function changeWords() {
   var i = 0;
   setInterval(function () {
       i = i < words.length - 1 ? i+1 : 0;
-      $(words).removeClass("active");
-      $(words).eq(i).addClass("active");
+      $(words).removeClass("activeone");
+      $(words).eq(i).addClass("activeone");
   }, 2000);
 }
   
