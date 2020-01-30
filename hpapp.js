@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  
+    changeWords();
 
 function changeWords() {
   var words = $("h1.heading-jumbo span");
