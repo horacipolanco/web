@@ -4,7 +4,7 @@ $(document).ready(function(){
     changeWordsSecond();
 
 function changeWords() {
-  var words = $("h1.heading-jumbo span");
+  var words = $("h1.heading-jumbo span.one");
   var i = 0;
   setInterval(function () {
       i = i < words.length - 1 ? i+1 : 0;
@@ -14,12 +14,12 @@ function changeWords() {
 }
   
   function changeWordsSecond() {
-  var words = $("h1.heading-jumbo span.second");
+  var wordssecond = $("h1.heading-jumbo span.second");
   var i = 0;
   setInterval(function () {
-      i = i < words.length - 1 ? i+1 : 0;
-      $(words).removeClass("activesecond");
-      $(words).eq(i).addClass("activesecond");
+      i = i < wordssecond.length - 1 ? i+1 : 0;
+      $(wordssecond).removeClass("activesecond");
+      $(wordssecond).eq(i).addClass("activesecond");
   }, 4000);
 }
 
